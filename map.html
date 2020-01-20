@@ -1,0 +1,1423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html><head>
+	<title>Untitled</title>
+	<link rel="STYLESHEET" type="text/css" href="d_force.css">
+	<link rel="STYLESHEET" type="text/css" href="menu.css">
+	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+var ebenenref, aktdiv, i, max=47;
+
+function ZeigeEbene(Nr)
+{
+aktdiv=0;
+for (i=1; i<=max; i++)
+{
+ebenenref="ebene"+i;
+if (document.getElementById) // IE 5.x und NN 6
+{
+if (i==Nr)
+{
+document.getElementById(ebenenref).style.visibility="visible";
+}
+else
+{
+document.getElementById(ebenenref).style.visibility="hidden";
+}
+}
+
+if (document.layers) // NN 4.x
+{
+if (i==Nr)
+{
+document.layers[ebenenref].visibility="visible";
+}
+else
+{
+document.layers[ebenenref].visibility="hidden";
+}
+}
+
+if (document.all && !document.getElementById) // IE 4
+{
+if (i==Nr)
+{
+document.all[ebenenref].style.visibility="visible";
+}
+else
+{
+document.all[ebenenref].style.visibility="hidden";
+}
+}
+}
+}
+
+function VersteckeEbene(Nr)
+{
+ebenenref="ebene"+Nr;
+if (document.getElementById) // IE 5.x und NN 6
+{
+if (Nr!=aktdiv)
+{
+document.getElementById(ebenenref).style.visibility="hidden";
+}
+else
+{
+document.getElementById(ebenenref).style.visibility="visible";
+}
+}
+
+if (document.layers) // NN 4.x
+{
+if (Nr!=aktdiv)
+{
+document.layers[ebenenref].visibility="hidden";
+}
+}
+
+if (document.all && !document.getElementById) // IE 4
+{
+if (Nr!=aktdiv)
+{
+document.all[ebenenref].style.visibility="hidden";
+}
+}
+}
+
+//-->
+</SCRIPT>
+</head>
+
+<body style="padding : 0px; margin : 0px; height : 100% ; width : 100% ; overflow: -moz-scrollbars-vertical; overflow-x: 'hidden'; overflow-y: 'auto';">
+
+<DIV STYLE="Position: absolute; Left: 10px; Top: 5px; Z-Index: 2">
+<ul class="cssmenu">
+  <li><a href="start.html" onfocus="this.blur()">Site Info</a>
+  <ul>
+      <li><a href="index.html" onfocus="this.blur()">Startpage</a>
+	  <li><a href="stats.html" onfocus="this.blur()">Statistics</a>
+	  <li><a href="credits.html" onfocus="this.blur()">Credits</a>
+	  <li><a href="copyright.html" onfocus="this.blur()">Copyright</a>
+	  <li><a href="contact.html" onfocus="this.blur()">Contact</a>
+	  <li><a href="../../choose.htm" onfocus="this.blur()">RPG-Home</a>
+  </ul>
+  <li><a href="rulers.html" onfocus="this.blur()">Rulers etc.</a>
+    <ul>
+      <li><a href="goldark.html" onfocus="this.blur()">Goldark</a>
+        <ul>
+          <li><a href="gaul.html" onfocus="this.blur()">Gaul</a>
+          <li><a href="kharhaz.html" onfocus="this.blur()">Kharhaz</a>
+          <li><a href="lyria.html" onfocus="this.blur()">Lyria</a>
+		  <li><a href="scythe.html" onfocus="this.blur()">Scythe</a>
+		  <li><a href="nelson.html" onfocus="this.blur()">Nelson</a>
+		  <li><a href="erin.html" onfocus="this.blur()">Erin</a>
+		  <li><a href="mileen.html" onfocus="this.blur()">Mileen</a>
+		  <li><a href="talon.html" onfocus="this.blur()">Talon</a>
+		  <li><a href="aisha.html" onfocus="this.blur()">Aisha</a>
+		  <li><a href="bagril.html" onfocus="this.blur()">Bagril</a>
+		  <li><a href="hagane.html" onfocus="this.blur()">Hagane</a>
+		  <li><a href="viper.html" onfocus="this.blur()">Viper</a>
+        </ul>
+
+      <li><a href="gongos.html" onfocus="this.blur()">Gongos</a>
+	    <ul>
+          <li><a href="baghib.html" onfocus="this.blur()">Baghib</a>
+<li><a href="katt.html" onfocus="this.blur()">Katt</a>
+<li><a href="rygar.html" onfocus="this.blur()">Rygar</a>
+<li><a href="yuni.html" onfocus="this.blur()">Yuni</a>
+<li><a href="gunner.html" onfocus="this.blur()">Gunner</a>
+<li><a href="norse.html" onfocus="this.blur()">Norse</a>
+<li><a href="rykker.html" onfocus="this.blur()">Rykker</a>
+<li><a href="silva.html" onfocus="this.blur()">Silva</a>
+<li><a href="yuug.html" onfocus="this.blur()">Yuug</a>
+        </ul>
+	  <li><a href="junon.html" onfocus="this.blur()">Junon</a>
+	  <ul>
+          <li><a href="ayrios.html" onfocus="this.blur()">Ayrios</a>
+          <li><a href="cinna.html" onfocus="this.blur()">Cinna</a>
+          <li><a href="ortega.html" onfocus="this.blur()">Ortega</a>
+          <li><a href="scar.html" onfocus="this.blur()">Scar</a>
+		  <li><a href="gustav.html" onfocus="this.blur()">Gustav</a>
+		  <li><a href="kidd.html" onfocus="this.blur()">Kidd</a>
+		  <li><a href="ramzal.html" onfocus="this.blur()">Ramzal</a>
+        </ul>
+	  <li><a href="leon.html" onfocus="this.blur()">Leon</a>
+	  <ul>
+          <li><a href="garyus.html" onfocus="this.blur()">Garyus</a>
+          <li><a href="raizak.html" onfocus="this.blur()">Raizak</a>
+          <li><a href="shaia.html" onfocus="this.blur()">Shaia</a>
+		  <li><a href="yanna.html" onfocus="this.blur()">Yanna</a>
+		  <li><a href="dayn.html" onfocus="this.blur()">Dayn</a>
+		  <li><a href="kodiak.html" onfocus="this.blur()">Kodiak</a>
+		  <li><a href="myria.html" onfocus="this.blur()">Myria</a>
+		  <li><a href="wriph.html" onfocus="this.blur()">Wriph</a>
+        </ul>
+		<li><a href="mikhal.html" onfocus="this.blur()">Mikhal</a>
+	  <ul>
+		  <li><a href="jackal.html" onfocus="this.blur()">Jackal</a>
+          <li><a href="mistal.html" onfocus="this.blur()">Mistal</a>
+          <li><a href="shione.html" onfocus="this.blur()">Shione</a>
+		  <li><a href="zagat.html" onfocus="this.blur()">Zagat</a>
+		  <li><a href="kumonn.html" onfocus="this.blur()">Kumonn</a>
+		  <li><a href="sayaka.html" onfocus="this.blur()">Sayaka</a>
+        </ul>
+		<li><a href="reinhart.html" onfocus="this.blur()">Reinhart</a>
+		 <ul>
+		  <li><a href="bardal.html" onfocus="this.blur()">Bardal</a>
+          <li><a href="presto.html" onfocus="this.blur()">Presto</a>
+          <li><a href="sophie.html" onfocus="this.blur()">Sophie</a>
+		  <li><a href="tsugal.html" onfocus="this.blur()">Tsugal</a>
+		  <li><a href="ardor.html" onfocus="this.blur()">Ardor</a>
+		  <li><a href="uryll.html" onfocus="this.blur()">Uryll</a>
+		  <li><a href="gigg.html" onfocus="this.blur()">Gigg</a>
+        </ul>
+		<li><a href="teiris.html" onfocus="this.blur()">Teiris</a>
+		<ul>
+		  <li><a href="duran.html" onfocus="this.blur()">Duran</a>
+          <li><a href="gulen.html" onfocus="this.blur()">Gulen</a>
+          <li><a href="manoa.html" onfocus="this.blur()">Manoa</a>
+		  <li><a href="reiner.html" onfocus="this.blur()">Reiner</a>
+		  <li><a href="laine.html" onfocus="this.blur()">Laine</a>
+		  <li><a href="nyvkall.html" onfocus="this.blur()">Nyvkall</a>
+		  <li><a href="piper.html" onfocus="this.blur()">Piper</a>
+		  <li><a href="varshyl.html" onfocus="this.blur()">Varshyl</a>
+        </ul>
+		<li><a href="wein.html" onfocus="this.blur()">Wein</a>
+		<ul>
+		  <li><a href="galam.html" onfocus="this.blur()">Galam</a>
+          <li><a href="link.html" onfocus="this.blur()">Link</a>
+          <li><a href="nina.html" onfocus="this.blur()">Nina</a>
+		  <li><a href="rudger.html" onfocus="this.blur()">Rudger</a>
+		  <li><a href="hilga.html" onfocus="this.blur()">Hilga</a>
+		  <li><a href="rock.html" onfocus="this.blur()">Rock</a>
+		  <li><a href="ogredd.html" onfocus="this.blur()">Ogredd</a>
+		  <li><a href="lone.html" onfocus="this.blur()">Lone</a>
+        </ul>
+</ul>
+<li><a href="vips.html" onfocus="this.blur()">VIPs etc.</a>
+<ul><li><a href="advisors.html" onfocus="this.blur()">Advisors</a>
+		<ul>
+		  <li><a href="kourin.html" onfocus="this.blur()">Kourin</a>
+		  <li><a href="moto.html" onfocus="this.blur()">Moto</a>
+          <li><a href="muran.html" onfocus="this.blur()">Muran</a>
+		  <li><a href="myuriko.html" onfocus="this.blur()">Myuriko</a>
+		  <li><a href="nirutaba.html" onfocus="this.blur()">Nirutaba</a>
+		  <li><a href="nolun.html" onfocus="this.blur()">Nolun</a>
+		  <li><a href="salizar.html" onfocus="this.blur()">Salizar</a>
+          <li><a href="taifon.html" onfocus="this.blur()">Taifon</a>
+        </ul>
+
+<li><a href="vip_char.html" onfocus="this.blur()">VIPs</a>
+		<ul>
+		  <li><a href="astea.html" onfocus="this.blur()">Astea</a>
+		  <li><a href="emissary.html" onfocus="this.blur()">Emissary</a>
+          <li><a href="faust.html" onfocus="this.blur()">Faust</a>
+		  <li><a href="frest.html" onfocus="this.blur()">Frest</a>
+		  <li><a href="homura.html" onfocus="this.blur()">Homura</a>
+		  <li><a href="kasabu.html" onfocus="this.blur()">Kasabu</a>
+		  <li><a href="leviathan.html" onfocus="this.blur()">Leviathan</a>
+          <li><a href="miral.html" onfocus="this.blur()">Miral</a>
+          <li><a href="farla.html" onfocus="this.blur()">Queen Farla</a>
+          <li><a href="storas.html" onfocus="this.blur()">Storas</a>
+        </ul>
+
+<li><a href="zanon.html" onfocus="this.blur()">Zanon</a>
+		<ul>
+		  <li><a href="grudar.html" onfocus="this.blur()">Grudar</a>
+		  <li><a href="veltarna.html" onfocus="this.blur()">Veltarna</a>
+          <li><a href="yuri.html" onfocus="this.blur()">Yuri</a>
+        </ul>
+
+		<li><a href="madruk_01.html" onfocus="this.blur()">Madruk</a>
+		<ul>
+		  <li><a href="madruk_02.html" onfocus="this.blur()">Madruk (2)</a>
+		  <li><a href="gyzzdark.html" onfocus="this.blur()">Gyzzdark</a>
+          <li><a href="gaul_02.html" onfocus="this.blur()">Gaul (2)</a>
+          <li><a href="scythe_02.html" onfocus="this.blur()">Scythe (2)</a>
+		  <li><a href="katmando_01.html" onfocus="this.blur()">Katmando</a>
+		  <li><a href="katmando_02.html" onfocus="this.blur()">Katmando (2)</a>
+		  <li><a href="kyoem.html" onfocus="this.blur()">Kyoem</a>
+		  <li><a href="ryskim.html" onfocus="this.blur()">Ryskim</a>
+		  <li><a href="santana.html" onfocus="this.blur()">Santana</a>
+		  <li><a href="zado.html" onfocus="this.blur()">Zado</a>
+        </ul>
+		<li><a href="no_jos.html" onfocus="this.blur()">Non Joiners</a>
+		<ul>
+		  <li><a href="golem.html" onfocus="this.blur()">Golem</a>
+          <li><a href="borgon.html" onfocus="this.blur()">Borgon</a>
+          <li><a href="diablo.html" onfocus="this.blur()">Diablo</a>
+		  <li><a href="faliel.html" onfocus="this.blur()">Faliel</a>
+		  <li><a href="agonni.html" onfocus="this.blur()">Agonni</a>
+		  <li><a href="paine.html" onfocus="this.blur()">Paine</a>
+		  <li><a href="gasper.html" onfocus="this.blur()">Gasper</a>
+		  <li><a href="helm.html" onfocus="this.blur()">Helm</a>
+		  <li><a href="tzuvan.html" onfocus="this.blur()">Tzuvan</a>
+        </ul>
+		<li><a href="hidden.html" onfocus="this.blur()">Hidden</a>
+		<ul>
+		  <li><a href="hayate.html" onfocus="this.blur()">Hayate</a>
+          <li><a href="shirox.html" onfocus="this.blur()">Shirox</a>
+          <li><a href="vangal.html" onfocus="this.blur()">Vangal</a>
+		  <li><a href="ramda.html" onfocus="this.blur()">Ramda</a>
+		  <li><a href="vlad.html" onfocus="this.blur()">Vlad</a>
+		  <li><a href="sierra_01.html" onfocus="this.blur()">Sierra</a>
+		  <li><a href="sierra_02.html" onfocus="this.blur()">Sierra (2)</a>
+		  <li><a href="haserudo.html" onfocus="this.blur()">Haserudo</a>
+		  <li><a href="iris_matsuri.html" onfocus="this.blur()">Iris/Matsuri</a>
+        </ul>
+		<li><a href="dragons_g1.html" onfocus="this.blur()">Dragons (1)</a>
+		<ul>
+		  <li><a href="graggel.html" onfocus="this.blur()">Graggel</a>
+		  <li><a href="karakk.html" onfocus="this.blur()">Karakk</a>
+          <li><a href="klaww.html" onfocus="this.blur()">Klaww</a>
+          <li><a href="krystiss.html" onfocus="this.blur()">Krystiss</a>
+		  <li><a href="paxx.html" onfocus="this.blur()">Paxx</a>
+		  <li><a href="razor.html" onfocus="this.blur()">Razor</a>
+		  <li><a href="skugg.html" onfocus="this.blur()">Skugg</a>
+        </ul>
+		<li><a href="dragons_g2.html" onfocus="this.blur()">Dragons (2)</a>
+		<ul>
+		  <li><a href="blakk.html" onfocus="this.blur()">Blakk</a>
+		  <li><a href="dugglar.html" onfocus="this.blur()">Dugglar</a>
+          <li><a href="fynn.html" onfocus="this.blur()">Fynn</a>
+		  <li><a href="grog.html" onfocus="this.blur()">Grog</a>
+          <li><a href="slytt.html" onfocus="this.blur()">Slytt</a>
+		  <li><a href="tazzax.html" onfocus="this.blur()">Tazzax</a>
+        </ul>
+	</ul>
+	<li><a href="f_generals.html" onfocus="this.blur()">Free Generals</a>
+	<ul>
+		<li><a href="beasts_g.html" onfocus="this.blur()">Beasts</a>
+		<ul>
+          <li><a href="barat.html" onfocus="this.blur()">Barat</a>
+		  <li><a href="fyffer.html" onfocus="this.blur()">Fyffer</a>
+		  <li><a href="rufas.html" onfocus="this.blur()">Rufas</a>
+          <li><a href="sylphia.html" onfocus="this.blur()">Sylphia</a>
+		  <li><a href="zakk.html" onfocus="this.blur()">Zakk</a>
+        </ul>
+		<li><a href="fighters_g.html" onfocus="this.blur()">Fighters</a>
+		<ul>
+		  <li><a href="atakin.html" onfocus="this.blur()">Atakin</a>
+		  <li><a href="gunter.html" onfocus="this.blur()">Gunter</a>
+		  <li><a href="ruix.html" onfocus="this.blur()">Ruix</a>
+          <li><a href="saul.html" onfocus="this.blur()">Saul</a>
+          <li><a href="taulus.html" onfocus="this.blur()">Taulus</a>
+        </ul>
+		<li><a href="knights_g.html" onfocus="this.blur()">Knights</a>
+		<ul>
+		  <li><a href="crawford.html" onfocus="this.blur()">Crawford</a>
+		  <li><a href="gorudias.html" onfocus="this.blur()">Gorudias</a>
+		  <li><a href="hikkis.html" onfocus="this.blur()">Hikkis</a>
+          <li><a href="randolph.html" onfocus="this.blur()">Randolph</a>
+        </ul>
+		<li><a href="magicians_g.html" onfocus="this.blur()">Magicians</a>
+		<ul>
+		  <li><a href="alex.html" onfocus="this.blur()">Alex</a>
+                  <li><a href="beykall.html" onfocus="this.blur()">Beykall</a>
+          <li><a href="farilis.html" onfocus="this.blur()">Farilis</a>
+          <li><a href="ishtar.html" onfocus="this.blur()">Ishtar</a>
+		  <li><a href="kilrein.html" onfocus="this.blur()">Kilrein</a>
+		  <li><a href="neil.html" onfocus="this.blur()">Neil</a>
+		  <li><a href="saharzad.html" onfocus="this.blur()">Saharzad</a>
+        </ul>
+		<li><a href="monks_g.html" onfocus="this.blur()">Monks</a>
+		<ul>
+		  <li><a href="barrat.html" onfocus="this.blur()">Barrat</a>
+          <li><a href="gator.html" onfocus="this.blur()">Gator</a>
+          <li><a href="livion.html" onfocus="this.blur()">Livion</a>
+		  <li><a href="stegalt.html" onfocus="this.blur()">Stegalt</a>
+        </ul>
+		<li><a href="ninja_g.html" onfocus="this.blur()">Ninjas</a>
+		<ul>
+		  <li><a href="narrak.html" onfocus="this.blur()">Narrak</a>
+          <li><a href="shadow.html" onfocus="this.blur()">Shadow</a>
+          <li><a href="slate.html" onfocus="this.blur()">Slate</a>
+		  <li><a href="sliver.html" onfocus="this.blur()">Sliver</a>
+		  <li><a href="slythis.html" onfocus="this.blur()">Slythis</a>
+		  <li><a href="zatai.html" onfocus="this.blur()">Zatai</a>
+        </ul>
+		<li><a href="priests_g.html" onfocus="this.blur()">Priests</a>
+		<ul>
+		  <li><a href="enya.html" onfocus="this.blur()">Enya</a>
+          <li><a href="fern.html" onfocus="this.blur()">Fern</a>
+          <li><a href="kulien.html" onfocus="this.blur()">Kulien</a>
+		  <li><a href="phylla.html" onfocus="this.blur()">Phylla</a>
+        </ul>
+		<li><a href="s_users_g.html" onfocus="this.blur()">Spirit Users</a>
+		<ul>
+		  <li><a href="cher.html" onfocus="this.blur()">Cher</a>
+          <li><a href="fiina.html" onfocus="this.blur()">Fiina</a>
+          <li><a href="katis.html" onfocus="this.blur()">Katis</a>
+		  <li><a href="marina.html" onfocus="this.blur()">Marina</a>
+		  <li><a href="mea.html" onfocus="this.blur()">Mea</a>
+		  <li><a href="milishea.html" onfocus="this.blur()">Milishea</a>
+		  <li><a href="phylicia.html" onfocus="this.blur()">Phylicia</a>
+        </ul>
+		<li><a href="samurai_g.html" onfocus="this.blur()">Samurai</a>
+		<ul>
+		  <li><a href="gekai.html" onfocus="this.blur()">Gekai</a>
+          <li><a href="hagar.html" onfocus="this.blur()">Hagar</a>
+          <li><a href="raitt.html" onfocus="this.blur()">Raitt</a>
+        </ul>
+		<li><a href="thiefs_g.html" onfocus="this.blur()">Thiefs</a>
+		<ul>
+		  <li><a href="bastion.html" onfocus="this.blur()">Bastion</a>
+<li><a href="gilette.html" onfocus="this.blur()">Gilette</a>
+          <li><a href="rog.html" onfocus="this.blur()">Rog</a>
+          <li><a href="voitt.html" onfocus="this.blur()">Voitt</a>
+        </ul>
+    </ul>
+    <li><a href="troops.html" onfocus="this.blur()">Troops</a>
+        <ul>
+          <li><a href="archers.html" onfocus="this.blur()">Archers</a>
+		  <li><a href="beasts.html" onfocus="this.blur()">Beasts</a>
+          <li><a href="cavalry.html" onfocus="this.blur()">Cavalry</a>
+		  <li><a href="dragons.html" onfocus="this.blur()">Dragons</a>
+		  <li><a href="harpies.html" onfocus="this.blur()">Harpies</a>
+          <li><a href="mages.html" onfocus="this.blur()">Mages</a>
+		  <li><a href="monks.html" onfocus="this.blur()">Monks</a>
+		  <li><a href="samurai.html" onfocus="this.blur()">Samurai</a>
+          <li><a href="soldiers.html" onfocus="this.blur()">Soldiers</a>
+		  <li><a href="zombies.html" onfocus="this.blur()">Zombies</a>
+        </ul>
+  <li><a href="items.html" onfocus="this.blur()">Items</a>
+    <ul>
+      <li><a href="weapons.html" onfocus="this.blur()">Weapons</a>
+	  <ul>
+		  <li><a href="axes.html" onfocus="this.blur()">Axes</a>
+          <li><a href="blades.html" onfocus="this.blur()">Blades</a>
+		  <li><a href="claws.html" onfocus="this.blur()">Claws</a>
+		  <li><a href="rods.html" onfocus="this.blur()">Rods</a>
+          <li><a href="spears.html" onfocus="this.blur()">Spears</a>
+          <li><a href="swords.html" onfocus="this.blur()">Swords</a>
+        </ul>
+      <li><a href="armory.html" onfocus="this.blur()">Armory</a>
+	        <ul>
+              <li><a href="armor.html" onfocus="this.blur()">Armor</a>
+              <li><a href="shields.html" onfocus="this.blur()">Shields</a>
+            </ul>
+	  <li><a href="books.html" onfocus="this.blur()">Books</a>
+      <li><a href="bracelets.html" onfocus="this.blur()">Bracelets</a>
+	  <li><a href="charms.html" onfocus="this.blur()">Charms</a>
+	  <li><a href="coins.html" onfocus="this.blur()">Coins</a>
+	  <li><a href="crests.html" onfocus="this.blur()">Crests</a>
+	  <li><a href="herbs.html" onfocus="this.blur()">Herbs</a>
+	  <li><a href="rings.html" onfocus="this.blur()">Rings</a>
+	  <li><a href="statues.html" onfocus="this.blur()">Statues</a>
+    </ul>
+  <li><a href="#" onfocus="this.blur()">Even More</a>
+        <ul>
+          <li><a href="map.html" onfocus="this.blur()">World Map</a>
+		  <li><a href="intro.html" onfocus="this.blur()">Game Intro</a>
+          <li><a href="events.html" onfocus="this.blur()">Events</a>
+		  <li><a href="m_end.html" onfocus="this.blur()">Madruk's End</a>
+		  <li><a href="ending.html" onfocus="this.blur()">Game End</a>
+          <li><a href="formations.html"onfocus="this.blur()">Formations</a>
+		  <li><a href="castles.html" onfocus="this.blur()">Castles etc.</a>
+		  <li><a href="backgrounds.html" onfocus="this.blur()">Backgrounds</a>
+		  		  <li><a href="midi.html" onfocus="this.blur()">Midi Files</a>
+        </ul>
+</ul>
+</div>
+<br><br><br>
+<img src="space.png" width="10" height="2" alt="" align=left><table class="desc" width="672" height="554" border="0" cellspacing="0" cellpadding="0" background="back_b.png">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="648" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="532" alt=""></td>
+<td valign=top>
+<img src="map_02.gif" width="640" height="532" alt="" border=0 usemap="#map">
+<map name="map">
+<area coords="450,3,483,31" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(1)" OnMouseOut="VersteckeEbene(1)">
+<area coords="371,69,394,94" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(2)" OnMouseOut="VersteckeEbene(2)">
+<area coords="404,101,439,134" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(3)" OnMouseOut="VersteckeEbene(3)">
+<area coords="435,152,459,176" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(4)" OnMouseOut="VersteckeEbene(4)">
+<area coords="426,217,450,241" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(5)" OnMouseOut="VersteckeEbene(5)">
+<area coords="341,241,374,272" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(6)" OnMouseOut="VersteckeEbene(6)">
+<area coords="381,244,405,268" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(7)" OnMouseOut="VersteckeEbene(7)">
+<area coords="478,241,504,265" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(8)" OnMouseOut="VersteckeEbene(8)">
+<area coords="602,241,638,268" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(9)" OnMouseOut="VersteckeEbene(9)">
+<area coords="297,248,321,270" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(10)" OnMouseOut="VersteckeEbene(10)">
+<area coords="258,246,284,272" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(11)" OnMouseOut="VersteckeEbene(11)">
+<area coords="225,250,250,276" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(12)" OnMouseOut="VersteckeEbene(12)">
+<area coords="264,165,282,195" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(13)" OnMouseOut="VersteckeEbene(13)">
+<area coords="133,184,160,205" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(14)" OnMouseOut="VersteckeEbene(14)">
+<area coords="196,211,222,231" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(15)" OnMouseOut="VersteckeEbene(15)">
+<area coords="147,221,172,246" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(16)" OnMouseOut="VersteckeEbene(16)">
+<area coords="149,250,177,276" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(17)" OnMouseOut="VersteckeEbene(17)">
+<area coords="124,272,147,296" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(18)" OnMouseOut="VersteckeEbene(18)">
+<area coords="175,276,197,297" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(19)" OnMouseOut="VersteckeEbene(19)">
+<area coords="291,298,316,323" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(20)" OnMouseOut="VersteckeEbene(20)">
+<area coords="193,315,218,341" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(21)" OnMouseOut="VersteckeEbene(21)">
+<area coords="173,349,207,378" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(22)" OnMouseOut="VersteckeEbene(22)">
+<area coords="198,401,219,378" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(23)" OnMouseOut="VersteckeEbene(23)">
+<area coords="308,334,339,365" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(24)" OnMouseOut="VersteckeEbene(24)">
+<area coords="308,410,330,433" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(25)" OnMouseOut="VersteckeEbene(25)">
+<area coords="259,370,281,393" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(26)" OnMouseOut="VersteckeEbene(26)">
+<area coords="241,394,266,411" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(27)" OnMouseOut="VersteckeEbene(27)">
+<area coords="325,370,347,387" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(28)" OnMouseOut="VersteckeEbene(28)">
+<area coords="201,426,225,453" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(29)" OnMouseOut="VersteckeEbene(29)">
+<area coords="252,443,288,475" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(30)" OnMouseOut="VersteckeEbene(30)">
+<area coords="206,500,243,528" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(31)" OnMouseOut="VersteckeEbene(31)">
+<area coords="346,446,370,463" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(32)" OnMouseOut="VersteckeEbene(32)">
+<area coords="371,393,394,418" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(33)" OnMouseOut="VersteckeEbene(33)">
+<area coords="405,410,429,436" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(34)" OnMouseOut="VersteckeEbene(34)">
+<area coords="443,446,465,469" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(35)" OnMouseOut="VersteckeEbene(35)">
+<area coords="455,415,489,445" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(36)" OnMouseOut="VersteckeEbene(36)">
+<area coords="403,357,427,379" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(37)" OnMouseOut="VersteckeEbene(37)">
+<area coords="431,329,455,345" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(38)" OnMouseOut="VersteckeEbene(38)">
+<area coords="382,335,401,364" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(39)" OnMouseOut="VersteckeEbene(39)">
+<area coords="344,343,368,366" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(40)" OnMouseOut="VersteckeEbene(40)">
+<area coords="349,291,373,315" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(41)" OnMouseOut="VersteckeEbene(41)">
+<area coords="383,292,415,321" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(42)" OnMouseOut="VersteckeEbene(42)">
+<area coords="438,277,464,305" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(43)" OnMouseOut="VersteckeEbene(43)">
+<area coords="510,271,537,299" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(44)" OnMouseOut="VersteckeEbene(44)">
+<area coords="548,276,582,312" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(45)" OnMouseOut="VersteckeEbene(45)">
+<area coords="529,327,555,348" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(46)" OnMouseOut="VersteckeEbene(46)">
+<area area shape="CIRCLE" coords="34,210,21" alt="" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(47)" OnMouseOut="VersteckeEbene(47)">
+</map>
+</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table><br /><br />
+
+<DIV ID="ebene1" STYLE="Position: absolute; Left: 21px; Top: 55px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Snow Shrine</b><hr color="#c0a800" size="1"><img src="stargem_sword.png" width="48" height="48" align=right alt="" />
+Near the end of your adventure some of <br />
+the eight chosen warriors have to visit <br />
+the Snow Shrine in search for the Stargem Sword. <br /><br />No one else than <b class="y">Goldark</b> and <b class="y">Wein</b> are allowed to enter here.<br /><br />Be prepared to encounter the undead brother of Goldark called Gyzzdark and a dragon general with <br />50 dragonmen here.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene2" STYLE="Position: absolute; Left: 21px; Top: 55px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Sophnik</b><hr color="#c0a800" size="1"><img src="golem.png" width="48" height="48" align=right alt="" />In case you are playing Junon's story, Sophnik Castle will be occupied by Golem, <br />a wannabe ruler of Tristan. <br /><br /><img src="swords.png" width="48" height="48" align=right alt="" />Get rid of him and station a more intelligent general here in search for the <b class="y">Gaia Sword</b>, <br />an item that can be equipped by fighters and knights as well.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene3" STYLE="Position: absolute; Left: 21px; Top: 55px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Tristan</b><hr color="#c0a800" size="1"><img src="crest.png" width="48" height="48" align=right alt="" />Capital of the Tristan Empire and starting point in Junon's adventure. <br /><br />It is rumored to house <b class="y">Flying Crests</b> like all the Tristan castles more than castles in all the other kingdoms.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene4" STYLE="Position: absolute; Left: 21px; Top: 55px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Blazart</b><hr color="#c0a800" size="1">Belonging to the Tristan Empire, Blazart Castle is located in the northern part of Legendra.<br /><br /><img src="statue.png" width="48" height="48" align=right alt="" />It is well known that mainly statues like <br /><b class="y">Astea Statues</b> or <b class="y">Dragon Statues</b> can <br />be found here in Domestic Mode. </td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene5" STYLE="Position: absolute; Left: 21px; Top: 55px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Starfall</b><hr color="#c0a800" size="1">The castle of Starfall guards the southern entrance <br />to the Tristan Empire. <br /><br />All invaders have to pass here if they want to avoid <br />the way via Topaz and Leon's monk troops.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene6" STYLE="Position: absolute; Left: 21px; Top: 55px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Topaz</b><hr color="#c0a800" size="1">While in former times all roads leaded to Rome, in Legendra you can say that this is true for Topaz, too. This fact makes it a bit difficult for Leon to defend his capital castle. <br /><br />No special items here but an assortment of various ones.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene7" STYLE="Position: absolute; Left: 21px; Top: 55px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Gasparl</b><hr color="#c0a800" size="1">In Leon's adventure Gasparl Castle is the home <br />of the Liberation Army formed by Dayn, Kodiak, <br />Myria, and Wriph.<br /><br />Try to get it well guarded because troops coming <br />from Tristan Empire normally try to invade Topaz Kingdom from the east and not from the north.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene8" STYLE="Position: absolute; Left: 21px; Top: 55px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Claystal</b><hr color="#c0a800" size="1">Lying in the northernmost part of Palemoon Kingdom this castle will be under attack by Tristan forces frequently. <br /><br />Try to avoid a multiple downgrading of the castle's level because three of your heroes (Junon, Leon, Mikhal) will have to use Claystal to refill their troops before visiting Cape Shrine and afterwards.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene9" STYLE="Position: absolute; Left: 21px; Top: 55px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Cape Shrine</b><hr color="#c0a800" size="1"><img src="moon_cane.png" width="48" height="48" align=right alt="" />
+Near the end of your adventure some of <br />
+the eight chosen warriors have to visit <br />
+the Cape Shrine in search for the <br />Moon Cane. <br /><br />No one else than <b class="y">Junon</b>, <b class="y">Leon</b>, and <b class="y">Mikhal</b> are allowed to enter here.<br /><br />Be prepared to encounter Gaul and two dragon generals with 50 dragonmen each here.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene10" STYLE="Position: absolute; Left: 350px; Top: 55px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Roguewar</b><hr color="#c0a800" size="1">The castle of Roguewar lies between the two capitals of Topaz and Fandaria like a pearl on a string together with Nikeral and Estonia.<br /><br />No more no less.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene11" STYLE="Position: absolute; Left: 350px; Top: 55px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Nikeral</b><hr color="#c0a800" size="1">Estonia and Nikeral guard the way to and from Fandaria and will be under constant attacks once you hold them. To prevent the castles from running low of troops refill you might try to station some more intelligent generals here that can fortify the castles from time to time.<br /><br /><img src="blade.png" width="48" height="48" align=right alt="" />If you are in need of the <b class="y">Murasame Sword</b> (STR +10) you have to search here because this item can't be found anywhere else.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene12" STYLE="Position: absolute; Left: 350px; Top: 55px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Estonia</b><hr color="#c0a800" size="1">Nikeral and Estonia guard the way to and from Fandaria and will be under constant attacks once you hold them. To prevent the castles from running low of troops refill you might try to station some more intelligent generals here that can fortify the castles from time to time.<br /><br />No special items to be found here.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene13" STYLE="Position: absolute; Left: 350px; Top: 55px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Shadow Tower</b><hr color="#c0a800" size="1">
+<table>
+<tr>
+<td class="w" valign=top>To visit this tower is important because <br />you will meet Frest and Ramda here. <br /><br />You may ignore the tower as long as you are not told to visit it during the adventure. <br /><br />Take care to be prepared because after your visit here a confrontation with Gaul <br />and Scythe is very likely.</td>
+<td valign=top><img src="frest.png" width="48" height="48" alt="" /><br /><br /><img src="ramda.png" width="48" height="48" alt="" /></td>
+</tr>
+</table>
+</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene14" STYLE="Position: absolute; Left: 350px; Top: 55px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><img src="haserudo_s.png" width="48" height="48" align=absmiddle alt="" />&nbsp;&nbsp;&nbsp;&nbsp;<b class="y">Haserudo</b><hr color="#c0a800" size="1">Only in the Playstation2 version of Dragon Force the hidden character Haserudo can be found here. He, like Iris and Matsuri, will present you a book with a level-boost effect once you have beaten him.<br /><br />Although being close to Goldark's Empire, nothing will happen if you confront him with Goldark before he has visited Iris and Matsuri. <br /><br />More information inside the section VIP's / Hidden.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene15" STYLE="Position: absolute; Left: 350px; Top: 55px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Vangal</b><hr color="#c0a800" size="1"><img src="vangal.png" width="48" height="48" align=right alt="" />The dragon man Vangal is one of the hidden characters in Legendra. He can be found in different places depending on the storyline you are playing. <br /><br />You have just revealed his location for <b class="y">Reinhart</b>. Vangal won't appear in Goldark's story.<br /><br /><img src="zado.png" width="48" height="48" align=right alt="" />Beware, shortly after Vlad has joined, you <br />have to battle another fierce dragon man called Zado and his 100 dragonmen.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene16" STYLE="Position: absolute; Left: 350px; Top: 55px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Ginan</b><hr color="#c0a800" size="1">A general called Nelson and his friends (Erin and Mileen) are living inside Ginan Castle in Goldark's adventure. <br /><br />Attack them to get some more generals for your troops. But beware, all of them are not of the reliable sort and may desert from time to time if they are getting unhappy.<br /><br />In the Playstation2 version of the game you may stock up your troops here before facing Haserudo who hides in the village right north of here.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene17" STYLE="Position: absolute; Left: 350px; Top: 55px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Fandaria</b><hr color="#c0a800" size="1">Home of Goldark and starting point if you play his story, this castle is the capital of the Fandarian <br />Empire. <br /><br />And that's all what we need to know about it!</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene18" STYLE="Position: absolute; Left: 350px; top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Bloodly</b><hr color="#c0a800" size="1">Bloody lies in the Fandarian Empire and the only reason to mention this remote place is that you have<br />to gather your eight chosen warriors here to face Madruk who hides inside Mt. Ruinlegde.<br /><br />Various items might be found here if a general with INT 70 or above is searching it during Domestic Mode.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene19" STYLE="Position: absolute; Left: 350px; top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Stoic</b><hr color="#c0a800" size="1">Goldark has to face Talon and his forces in this castle in case you have chosen Goldark's storyline to play.<br /><br />Nothing else can be said about Stoic Castle.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene20" STYLE="Position: absolute; Left: 350px; top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Stalwart</b><hr color="#c0a800" size="1">You have to pass Stalwart Castle on your way to Tradnor, the capital of Tradnor Kingdom. <br /><br />Due to its location it might be attacked very often by forces coming from the north, south and east. Use Tradnor to stock up supplies if those of Stalwart are running low.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene21" STYLE="Position: absolute; Left: 350px; top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Royal</b><hr color="#c0a800" size="1"> During Mikhal's story the evil ninja Kyoem resides in this castle with his generals Kumonn and Sayaka. <br />You may use this fact for your advantage, because <br />they block all attacks from Fandaria. So you can conquer Bozack first and return here later if you have enough generals to station here against the constant attacks from Fandaria Empire.<br /><br /><img src="blade.png" width="48" height="48" align=right alt="" />The best Ninja weapon (<b class="y">Kamui Blade</b>) <br />can be found here, boosts STR +8.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene22" STYLE="Position: absolute; Left: 350px; top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Izumo</b><hr color="#c0a800" size="1">Mikhal's home is the capital of Izumo Nation. <br /><br />Besides that no interesting facts are known about Izumo Castle.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene23" STYLE="Position: absolute; Left: 350px; top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Eternal</b><hr color="#c0a800" size="1"><img src="blade.png" width="48" height="48" align=right alt="" />This castle is the southern entrance to <br />Izumo Nation. If you want to find items <br />for your Samurai generals, you may find swords like the <b class="y">Moonbeam Sword</b> here.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene24" STYLE="Position: absolute; Left: 350px; top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Tradnor</b><hr color="#c0a800" size="1">Tradnor is the capital of Tradnor Kingdom and home of Reinhart. The only road leading to Tradnor is that from Stalwart. As the distance between both castles is small, you can easily stock up supplies here once the reserves of the smaller Stalwart have run out.<br /><br /><img src="spears.png" width="48" height="48" align=right alt="" />Tradnor is known to keep spears like the <b class="y">Tempest</b> within its walls. This item grants extra defence in Duells.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene25" STYLE="Position: absolute; Left: 350px; top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Lightan</b><hr color="#c0a800" size="1"><img src="zanon.png" width="48" height="48" align=right alt="" />Zanon and his generals (Grudar, Veltarna, Yuri) are living in Lightan Castle. Zanon is <br />in possesion of the sword Eclisis, that <br />stocks up his power unlimited. <br />If you are able to drive him and his followers out of Lightan, they will return here continious until a special event in the storyline. This is as a nice leveling up opportunity for your eight warriors.<br /><br /><img src="claw.png" width="48" height="48" align=right alt="" />Inside Lightan Castle <b class="y">Dark Claws</b> can be found. They can be used by monk generals and boost up STR by +7.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene26" STYLE="Position: absolute; Left: 350px; top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Mikeral</b><hr color="#c0a800" size="1">Due to its location as a passthrough from west to east and from north to south Mikeral castle it will be under attack quite often independent which storyline you are playing. So keep it well stocked up with generals if you are holding Mikeral.<br /><br /><img src="crest.png" width="48" height="48" align=right alt="" />Unlike some other castles a range of various crests can be found here instead of only one like Magicka or Crystal.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene27" STYLE="Position: absolute; Left: 350px; top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Shirox and Hayate</b><hr color="#c0a800" size="1"><img src="shirox.png" width="48" height="48" align=right alt="" />Shirox as well as Hayate hide here. Both <br />can be found by all rulers except Goldark. <br />First you meet Shirox, a student of Hayate.<br /><br /><img src="hayate.png" width="48" height="48" align=right alt="" />On your second visit here you'll encounter Hayate. He and Shirox will join after the <br />fight, no matter if you win or loose.<br /><br /><img src="book.png" width="48" height="48" align=right alt="" />Oh, I nearly forgot, in case you beat Shirox, you will get some Strategic Runes from Hayate.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene28" STYLE="Position: absolute; Left: 21px; top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Vangal</b><hr color="#c0a800" size="1"><img src="vangal.png" width="48" height="48" align=right alt="" />The dragon man Vangal is one of the hidden characters in Legendra. He can be found in different places depending on the storyline you are playing. <br /><br />You have just revealed his location for <b class="y">Mikhal</b>. <br />Vangal won't appear in Goldark's story.<br /><br /><img src="zado.png" width="48" height="48" align=right alt="" />Beware, shortly after Vlad has joined, you <br />have to battle another fierce dragon man called Zado and his 100 dragonmen.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene29" STYLE="Position: absolute; Left: 350px; top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Sardia</b><hr color="#c0a800" size="1"><img src="axes.png" width="48" height="48" align=right alt="" />Except that Sardia Castle is known to be a place where the <b class="y">Igneous Axe</b> can be found not much can be told about this castle. <br /><br />Just one fact I nearly forgot, in Gongos' story Sardia is the home of Gunner and his army (Norse, Rykker, Silva) which are the first generals Gongos has to beat.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene30" STYLE="Position: absolute; Left: 350px; top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Bozack</b><hr color="#c0a800" size="1">Being capital of the Bozack Nation is the most important fact about this castle.<br /><br />You should stock up your supplies and troops here during the end of the adventure before and after Gongos, Reinhart and Teiris have explored the Forest Shrine. Bozack Castle has enough men available for recruiting even more than 200 men after the three heroes return from the shrine.<br /><br />No special items are to be found here.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene31" STYLE="Position: absolute; Left: 350px; top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Forest Shrine</b><hr color="#c0a800" size="1"><img src="sun_bracelet.png" width="48" height="48" align=right alt="" />
+Near the end of your adventure some of <br />
+the eight chosen warriors have to visit <br />
+the Forest Shrine in search for the Sun Bracelet. <br /><br />No one else than <b class="y">Gongos</b>, <b class="y">Reinhart</b>, and <b class="y">Teiris</b> are allowed to enter here.<br /><br />Be prepared to encounter Scythe and two dragon generals with 50 dragonmen each here.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene32" STYLE="Position: absolute; Left: 21px; Top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Vangal</b><hr color="#c0a800" size="1"><img src="vangal.png" width="48" height="48" align=right alt="" />The dragon man Vangal is one of the hidden characters in Legendra. He can be found in different places depending on the storyline you are playing. <br /><br />You have just revealed his location for <b class="y">Teiris</b> and <b class="y">Wein</b>. Vangal won't appear in Goldark's story.<br /><br /><img src="zado.png" width="48" height="48" align=right alt="" />Beware, shortly after Vlad has joined, you <br />have to battle another fierce dragon man called Zado and his 100 dragonmen.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene33" STYLE="Position: absolute; Left: 21px; Top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Maryware</b><hr color="#c0a800" size="1">The castle has an important role while playing Teiris or Wein. All armies invading from the west have to pass Maryware Castle. So the attack rate is very high. Be prepared and stock up your supplies after each victorious battle and have enough generals staying here as long as you don't have the south-western part part of Legendra under your control. <br /><br /><img src="hikkis.png" width="48" height="48" align=right alt="" />A knight called Hikkis resides here in the beginning of Wein's story. He is known for desertion if not treated with respect (awards!!).</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene34" STYLE="Position: absolute; Left: 21px; Top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Galfiel</b><hr color="#c0a800" size="1">Besides being another castle of the Highland Kingdom there is not much to tell about Galfiel Castle.<br /><br />Galfiel will not be attacked much in the beginning because enemies from the north are blocked by Travan and foes coming from the west have to pass Maryware first.<br /><br />No special items but a wide range of them might be found during searches.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene35" STYLE="Position: absolute; Left: 21px; Top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Daiden</b><hr color="#c0a800" size="1"><img src="armor.png" width="48" height="48" align=right alt="" />South of Highland Castle you'll see Daiden which belongs to the Highland Kingdom. Its strategic value is low because of its location on the map.<br /><br />If you are looking for defensive gear, this castle may <br />be worth searching during Domestic Mode, because an item called <b class="y">Battle Armor</b> can be found here.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene36" STYLE="Position: absolute; Left: 21px; Top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Highland</b><hr color="#c0a800" size="1">This castle is the capital of the Highland Kingdom. Wein will start his adventure here. In case you don't start with Wein, you normally will find him here. <br /><br />Highland Castle has no great strategic value because its location in the eastern outskirts of the Legendra continent.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene37" STYLE="Position: absolute; Left: 21px; Top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Travan</b><hr color="#c0a800" size="1">
+<table>
+<tr>
+<td class="w" valign=top>During Wein's storyline you will find Borgon, Diablo, and Faliel inside Travan Castle.<br /><br />They all will sustain deadly injuries in battle and never join Wein's troops. Eventually you may see Diablo and Faliel amongst your troops if another leader than Wein has beaten them in different storylines. Borgon is a non joiner for every ruler.<br /><br />Besides that there is not much interesting to be told about Travan.</td>
+<td><img src="borgon.png" width="48" height="48" alt="" /><br /><br /><img src="diablo.png" width="48" height="48" alt="" /><br /><br /><img src="faliel.png" width="48" height="48" alt="" /></td>
+</tr>
+</table>
+</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene38" STYLE="Position: absolute; Left: 21px; Top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Vangal</b><hr color="#c0a800" size="1"><img src="vangal.png" width="48" height="48" align=right alt="" />The dragon man Vangal is one of the hidden characters in Legendra. He can be found in different places depending on the storyline you are playing. <br /><br />You have just revealed his location for <b class="y">Junon</b>, <b class="y">Leon</b> and <b class="y">Gongos</b>. Vangal won't appear in Goldark's story.<br /><br /><img src="zado.png" width="48" height="48" align=right alt="" />Beware, shortly after Vlad has joined, you <br />have to battle another fierce dragon man called Zado and his 100 dragonmen.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene39" STYLE="Position: absolute; Left: 21px; Top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Fiend Tower</b><hr color="#c0a800" size="1"><img src="vlad.png" width="48" height="48" align=right alt="" />Inside Fiend Tower a bloodsucker called <br />Vlad is waiting for your leader. Only if you <br />are playing Goldark's storyline a visit of <br />the tower is in vain (Vlad will not appear). <br />Vlad's troops are zombies, their number match the active troops of your leader once he/she approaches Fiend Tower. <br /><img src="sierra1.png" width="48" height="48" align=right alt="" />After being beaten, Vlad joins your army, <br />but he will only stay if he is allowed to <br />help rescuing his fiancee Sierra from the clutches of evil Ryskim. He leaves if he's <br />not a part of the rescue team.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene40" STYLE="Position: absolute; Left: 21px; Top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Danyan</b><hr color="#c0a800" size="1"><img src="ring.png" width="48" height="48" align=right alt="" />To upgrade the command levels of your<br />
+generals, Danyan Castle is the right place<br />
+to fullfill your plans. <br /><br />The only item that can be found here is the <b class="y">True Ring</b> which adds a whooping +9 to COM.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene41" STYLE="Position: absolute; Left: 21px; Top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Ogrekeep</b><hr color="#c0a800" size="1"><img src="claw.png" width="48" height="48" align=right alt="" />Not much to tell about Ogrekeep Castle except that the only item that you may find here during your Domestic Mode searches <br />is the <b class="y">Death Claw</b>. <br /><br />If you want to add some power to the attacks of your monk general this would be the right item.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene42" STYLE="Position: absolute; Left: 21px; Top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Magicka</b><hr color="#c0a800" size="1"><img src="crest.png" width="48" height="48" align=right alt="" />This location should be visited by one <br />of your generals. After some work you<br />can build Magicka Castle from the ruins. <br />It can be attacked from five sides, so it <br />might be a bit tricky to defend the castle.<br /><br />The location seems to be haunted and is a good place for finding <b class="y">Spirit Crest</b> which are needed to recruit Zombie soldiers. </td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene43" STYLE="Position: absolute; Left: 21px; Top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Crystal</b><hr color="#c0a800" size="1"><img src="crest.png" width="48" height="48" align=right alt="" />This small castle near Palemoon might <br />
+be important for your progress because <br />
+inside here you only find <b class="y">Dragon Crests</b> during Domestic Mode. <br /><br />
+If you want dragon soldiers for your main generals this is the best place to search.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene44" STYLE="Position: absolute; Left: 21px; Top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Orvue</b><hr color="#c0a800" size="1">In case you play Teiris' storyline you will encounter Laine, her fiancee Varshyl, Piper, and Nyvkall here. <br />They are hard to beat but if you want to defeat Madruk in the end you have to start somewhere to gain experience. <br /><br />Unlike in some other castles you may find various items here when Searching in Domestic Mode.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene45" STYLE="Position: absolute; Left: 21px; Top: 347px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Palemoon</b><hr color="#c0a800" size="1">This castle is the home of Teiris, Queen of the Palemoon Kingdom. <br /><br />Being in the easternmost location of Legendra, Palemoon has no great strategic importance. <br /><br />No special items can be found here, too. So you might assign a general with intelligence &lt; 70 here as a leader because you won't miss much.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene46" STYLE="Position: absolute; Left: 21px; Top: 347px; height: 200px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><img src="iris_matsuri_s.png" width="48" height="48" align=absmiddle alt="" />&nbsp;&nbsp;&nbsp;&nbsp;<b class="y">Iris and Matsuri</b><hr color="#c0a800" size="1">These two characters only appear in the Playstation2 version of the game. After being defeated they donate your leader a book with a level-up effect.<br /><br />Both should be found before your ruler visits Haserudo (another PS2 version character).<br /><br />For more information refer to the section VIP's / Hidden.</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+
+<DIV ID="ebene47" STYLE="Position: absolute; Left: 350px; Top: 55px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="back_s.png" width="320" height="240">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td class="w" height=218 width=298 valign=top><b class="y">Mt. Ruinlegde</b><hr color="#c0a800" size="1">
+<table>
+<tr>
+<td class="w" valign=top>Here your adventure ends independant of the storyline. Deep inside Mt. Ruinlegde Madruk is awaiting your heroes. <br />You have to fight a transformed Gaul and Scythe as well as Katmando, the 3rd dark apostle, too. Gaul's troops changed to dragons, Scythe has recruited Sirens, Katmando is fighting alone. <br />Remember: Samurais are best versus dragons, sirens are allergic against harpies, Katmando has a weakness versus beastmen. Plan ahead and you will do fine!</td>
+<td><img src="madruk.png" width="48" height="48" alt="" /><br /><img src="gaul2.png" width="48" height="48" alt="" /><br /><img src="scythe2.png" width="48" height="48" alt="" /><br /><img src="katmando.png" width="48" height="48" alt="" /></td>
+</tr>
+</table></td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+<DIV STYLE="Position: absolute; Left: 20px; Top: 55px; Z-Index: 1">For some information about the various locations <br />move your mouse over castles, shrines, and villages. <br />Especially some villages might reveal a secret.<br /><br /><img src="logo_s.png" width="149" height="104" hspace=20 alt="" /></div>
+<script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'UA-62681518-1', 'auto'); ga('require', 'displayfeatures'); ga('send', 'pageview');</script></body>
+
+<!-- Mirrored from www.biostation-gt-bi.de/wl/map.html by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 06 Jan 2011 17:35:00 GMT -->
+</html>

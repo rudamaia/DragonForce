@@ -1,0 +1,100 @@
+body {
+	background-color: #1E1A54
+}
+
+ul.cssmenu {
+  position: relative;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+ul.cssmenu ul {
+  position: relative;
+  display: none;
+}
+ul.cssmenu li {
+  position: relative;
+  display: inline;
+  float: left;
+  
+}
+/* Menupunkt stylen */
+
+ul.cssmenu li a {
+	font-family: arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 32px;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 96px;
+	height: 32px;
+	background-image: url(button.png);
+}
+ul.cssmenu li:hover > a {
+	color: #fff;
+	font-weight: bold;
+}
+/* Untermenüpunkt einblenden */
+ul.cssmenu li:hover > ul {
+  position: absolute;
+  top: 32px;
+  left: -40px;
+  display: inline;
+}
+/* ab zweite Ebene */
+ul.cssmenu li li:hover > ul {
+  top: 0px;
+  left: 56px;
+}
+ul.cssmenu li li a {
+  width: 96px;
+}
+/* Farben der einzelnen Ebenen (werden vererbt)*/
+ul.cssmenu a {
+  color: #FBE602;
+}
+ul.cssmenu ul a {
+  background-color: transparent;
+}
+ul.cssmenu ul ul a{
+  background-color: transparent;
+}
+ul.cssmenu ul ul ul a{
+  background-color: transparent;
+}
+ 
+/* zusätzliche Styleangaben für IE 6 */
+/* das Menü wird dort untereinander dargestellt */
+
+.opacity1 {filter:alpha(opacity=50)} .opacity2 {filter:alpha(opacity=100)}
+
+ul.cssmenu {
+  _text-indent: 10px;
+}
+ul.cssmenu ul {
+  _display: inline;
+  _margin-left: 0px;
+  _text-indent: 20px;
+}
+ul.cssmenu ul ul {
+  _text-indent: 30px;
+}
+ul.cssmenu ul ul ul {
+  _text-indent: 40px;
+}
+ul.cssmenu li {
+  _float: none;
+}
+/* Menupunkt stylen */
+ul.cssmenu li a {
+  _text-align: left;
+  _width: 96px;
+}
+ul.cssmenu a:hover {
+  _font-weight: bold;
+  _background-color: transparent;
+}
+
+

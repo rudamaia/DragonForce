@@ -1,0 +1,504 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html><head>
+	<title>Untitled</title>
+	<link rel="STYLESHEET" type="text/css" href="d_force.css">
+	<link rel="STYLESHEET" type="text/css" href="menu.css%3Cmeta%20http-equiv=.html"Content-Type" content="text/html; charset=iso-8859-1">
+">
+	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+var ebenenref, aktdiv, i, max=1;
+
+function ZeigeEbene(Nr)
+{
+aktdiv=0;
+for (i=1; i<=max; i++)
+{
+ebenenref="ebene"+i;
+if (document.getElementById) // IE 5.x und NN 6
+{
+if (i==Nr)
+{
+document.getElementById(ebenenref).style.visibility="visible";
+}
+else
+{
+document.getElementById(ebenenref).style.visibility="hidden";
+}
+}
+
+if (document.layers) // NN 4.x
+{
+if (i==Nr)
+{
+document.layers[ebenenref].visibility="visible";
+}
+else
+{
+document.layers[ebenenref].visibility="hidden";
+}
+}
+
+if (document.all && !document.getElementById) // IE 4
+{
+if (i==Nr)
+{
+document.all[ebenenref].style.visibility="visible";
+}
+else
+{
+document.all[ebenenref].style.visibility="hidden";
+}
+}
+}
+}
+
+function VersteckeEbene(Nr)
+{
+ebenenref="ebene"+Nr;
+if (document.getElementById) // IE 5.x und NN 6
+{
+if (Nr!=aktdiv)
+{
+document.getElementById(ebenenref).style.visibility="hidden";
+}
+else
+{
+document.getElementById(ebenenref).style.visibility="visible";
+}
+}
+
+if (document.layers) // NN 4.x
+{
+if (Nr!=aktdiv)
+{
+document.layers[ebenenref].visibility="hidden";
+}
+}
+
+if (document.all && !document.getElementById) // IE 4
+{
+if (Nr!=aktdiv)
+{
+document.all[ebenenref].style.visibility="hidden";
+}
+}
+}
+
+//-->
+</SCRIPT>
+</head>
+
+<body style="padding : 0px; margin : 0px; height : 100% ; width : 100% ; overflow: -moz-scrollbars-vertical; overflow-x: 'hidden'; overflow-y: 'auto';">
+
+<DIV STYLE="Position: absolute; Left: 10px; Top: 5px; Z-Index: 2">
+<ul class="cssmenu">
+  <li><a href="start.html" onfocus="this.blur()">Site Info</a>
+  <ul>
+      <li><a href="index.html" onfocus="this.blur()">Startpage</a>
+	  <li><a href="stats.html" onfocus="this.blur()">Statistics</a>
+	  <li><a href="credits.html" onfocus="this.blur()">Credits</a>
+	  <li><a href="copyright.html" onfocus="this.blur()">Copyright</a>
+	  <li><a href="contact.html" onfocus="this.blur()">Contact</a>
+	  <li><a href="../../choose.htm" onfocus="this.blur()">RPG-Home</a>
+  </ul>
+  <li><a href="rulers.html" onfocus="this.blur()">Rulers etc.</a>
+    <ul>
+      <li><a href="goldark.html" onfocus="this.blur()">Goldark</a>
+        <ul>
+          <li><a href="gaul.html" onfocus="this.blur()">Gaul</a>
+          <li><a href="kharhaz.html" onfocus="this.blur()">Kharhaz</a>
+          <li><a href="lyria.html" onfocus="this.blur()">Lyria</a>
+		  <li><a href="scythe.html" onfocus="this.blur()">Scythe</a>
+		  <li><a href="nelson.html" onfocus="this.blur()">Nelson</a>
+		  <li><a href="erin.html" onfocus="this.blur()">Erin</a>  
+		  <li><a href="mileen.html" onfocus="this.blur()">Mileen</a> 
+		  <li><a href="talon.html" onfocus="this.blur()">Talon</a>
+		  <li><a href="aisha.html" onfocus="this.blur()">Aisha</a>
+		  <li><a href="bagril.html" onfocus="this.blur()">Bagril</a>
+		  <li><a href="hagane.html" onfocus="this.blur()">Hagane</a>
+		  <li><a href="viper.html" onfocus="this.blur()">Viper</a>
+        </ul>
+      
+      <li><a href="gongos.html" onfocus="this.blur()">Gongos</a>
+	    <ul>
+          <li><a href="baghib.html" onfocus="this.blur()">Baghib</a>
+<li><a href="katt.html" onfocus="this.blur()">Katt</a>
+<li><a href="rygar.html" onfocus="this.blur()">Rygar</a>
+<li><a href="yuni.html" onfocus="this.blur()">Yuni</a>
+<li><a href="gunner.html" onfocus="this.blur()">Gunner</a>
+<li><a href="norse.html" onfocus="this.blur()">Norse</a>
+<li><a href="rykker.html" onfocus="this.blur()">Rykker</a>
+<li><a href="silva.html" onfocus="this.blur()">Silva</a> 
+<li><a href="yuug.html" onfocus="this.blur()">Yuug</a>
+        </ul>
+	  <li><a href="junon.html" onfocus="this.blur()">Junon</a>
+	  <ul>
+          <li><a href="ayrios.html" onfocus="this.blur()">Ayrios</a>
+          <li><a href="cinna.html" onfocus="this.blur()">Cinna</a>
+          <li><a href="ortega.html" onfocus="this.blur()">Ortega</a>
+          <li><a href="scar.html" onfocus="this.blur()">Scar</a>
+		  <li><a href="gustav.html" onfocus="this.blur()">Gustav</a>
+		  <li><a href="kidd.html" onfocus="this.blur()">Kidd</a>
+		  <li><a href="ramzal.html" onfocus="this.blur()">Ramzal</a>
+        </ul>
+	  <li><a href="leon.html" onfocus="this.blur()">Leon</a>
+	  <ul>
+          <li><a href="garyus.html" onfocus="this.blur()">Garyus</a>
+          <li><a href="raizak.html" onfocus="this.blur()">Raizak</a>
+          <li><a href="shaia.html" onfocus="this.blur()">Shaia</a>
+		  <li><a href="yanna.html" onfocus="this.blur()">Yanna</a>
+		  <li><a href="dayn.html" onfocus="this.blur()">Dayn</a>
+		  <li><a href="kodiak.html" onfocus="this.blur()">Kodiak</a>
+		  <li><a href="myria.html" onfocus="this.blur()">Myria</a> 
+		  <li><a href="wriph.html" onfocus="this.blur()">Wriph</a>
+        </ul>
+		<li><a href="mikhal.html" onfocus="this.blur()">Mikhal</a>
+	  <ul>
+		  <li><a href="jackal.html" onfocus="this.blur()">Jackal</a>
+          <li><a href="mistal.html" onfocus="this.blur()">Mistal</a>
+          <li><a href="shione.html" onfocus="this.blur()">Shione</a>
+		  <li><a href="zagat.html" onfocus="this.blur()">Zagat</a>
+		  <li><a href="kumonn.html" onfocus="this.blur()">Kumonn</a> 
+		  <li><a href="sayaka.html" onfocus="this.blur()">Sayaka</a>
+        </ul>
+		<li><a href="reinhart.html" onfocus="this.blur()">Reinhart</a>
+		 <ul>
+		  <li><a href="bardal.html" onfocus="this.blur()">Bardal</a>
+          <li><a href="presto.html" onfocus="this.blur()">Presto</a>
+          <li><a href="sophie.html" onfocus="this.blur()">Sophie</a>
+		  <li><a href="tsugal.html" onfocus="this.blur()">Tsugal</a>
+		  <li><a href="ardor.html" onfocus="this.blur()">Ardor</a> 
+		  <li><a href="uryll.html" onfocus="this.blur()">Uryll</a>
+		  <li><a href="gigg.html" onfocus="this.blur()">Gigg</a> 
+        </ul>
+		<li><a href="teiris.html" onfocus="this.blur()">Teiris</a>
+		<ul>
+		  <li><a href="duran.html" onfocus="this.blur()">Duran</a>
+          <li><a href="gulen.html" onfocus="this.blur()">Gulen</a>
+          <li><a href="manoa.html" onfocus="this.blur()">Manoa</a>
+		  <li><a href="reiner.html" onfocus="this.blur()">Reiner</a>
+		  <li><a href="laine.html" onfocus="this.blur()">Laine</a> 
+		  <li><a href="nyvkall.html" onfocus="this.blur()">Nyvkall</a>
+		  <li><a href="piper.html" onfocus="this.blur()">Piper</a>
+		  <li><a href="varshyl.html" onfocus="this.blur()">Varshyl</a>  
+        </ul>
+		<li><a href="wein.html" onfocus="this.blur()">Wein</a>
+		<ul>
+		  <li><a href="galam.html" onfocus="this.blur()">Galam</a>
+          <li><a href="link.html" onfocus="this.blur()">Link</a>
+          <li><a href="nina.html" onfocus="this.blur()">Nina</a>
+		  <li><a href="rudger.html" onfocus="this.blur()">Rudger</a>
+		  <li><a href="hilga.html" onfocus="this.blur()">Hilga</a> 
+		  <li><a href="rock.html" onfocus="this.blur()">Rock</a>
+		  <li><a href="ogredd.html" onfocus="this.blur()">Ogredd</a>
+		  <li><a href="lone.html" onfocus="this.blur()">Lone</a>  
+        </ul>
+</ul>
+<li><a href="vips.html" onfocus="this.blur()">VIPs etc.</a>
+<ul><li><a href="advisors.html" onfocus="this.blur()">Advisors</a>
+		<ul>
+		  <li><a href="kourin.html" onfocus="this.blur()">Kourin</a>
+		  <li><a href="moto.html" onfocus="this.blur()">Moto</a>
+          <li><a href="muran.html" onfocus="this.blur()">Muran</a>
+		  <li><a href="myuriko.html" onfocus="this.blur()">Myuriko</a>
+		  <li><a href="nirutaba.html" onfocus="this.blur()">Nirutaba</a>
+		  <li><a href="nolun.html" onfocus="this.blur()">Nolun</a>
+		  <li><a href="salizar.html" onfocus="this.blur()">Salizar</a>
+          <li><a href="taifon.html" onfocus="this.blur()">Taifon</a>
+        </ul>
+
+<li><a href="vip_char.html" onfocus="this.blur()">VIPs</a>
+		<ul>
+		  <li><a href="astea.html" onfocus="this.blur()">Astea</a>
+		  <li><a href="emissary.html" onfocus="this.blur()">Emissary</a>
+          <li><a href="faust.html" onfocus="this.blur()">Faust</a>
+		  <li><a href="frest.html" onfocus="this.blur()">Frest</a>
+		  <li><a href="homura.html" onfocus="this.blur()">Homura</a>
+		  <li><a href="kasabu.html" onfocus="this.blur()">Kasabu</a>
+		  <li><a href="leviathan.html" onfocus="this.blur()">Leviathan</a>
+          <li><a href="miral.html" onfocus="this.blur()">Miral</a>
+          <li><a href="farla.html" onfocus="this.blur()">Queen Farla</a>
+          <li><a href="storas.html" onfocus="this.blur()">Storas</a>
+        </ul>
+
+<li><a href="zanon.html" onfocus="this.blur()">Zanon</a>
+		<ul>
+		  <li><a href="grudar.html" onfocus="this.blur()">Grudar</a>
+		  <li><a href="veltarna.html" onfocus="this.blur()">Veltarna</a>
+          <li><a href="yuri.html" onfocus="this.blur()">Yuri</a>
+        </ul>
+		
+		<li><a href="madruk_01.html" onfocus="this.blur()">Madruk</a>
+		<ul>
+		  <li><a href="madruk_02.html" onfocus="this.blur()">Madruk (2)</a>
+		  <li><a href="gyzzdark.html" onfocus="this.blur()">Gyzzdark</a>
+          <li><a href="gaul_02.html" onfocus="this.blur()">Gaul (2)</a>
+          <li><a href="scythe_02.html" onfocus="this.blur()">Scythe (2)</a>
+		  <li><a href="katmando_01.html" onfocus="this.blur()">Katmando</a>
+		  <li><a href="katmando_02.html" onfocus="this.blur()">Katmando (2)</a>
+		  <li><a href="kyoem.html" onfocus="this.blur()">Kyoem</a>
+		  <li><a href="ryskim.html" onfocus="this.blur()">Ryskim</a> 
+		  <li><a href="santana.html" onfocus="this.blur()">Santana</a>
+		  <li><a href="zado.html" onfocus="this.blur()">Zado</a>
+        </ul>
+		<li><a href="no_jos.html" onfocus="this.blur()">Non Joiners</a>
+		<ul>
+		  <li><a href="golem.html" onfocus="this.blur()">Golem</a>
+          <li><a href="borgon.html" onfocus="this.blur()">Borgon</a>
+          <li><a href="diablo.html" onfocus="this.blur()">Diablo</a>
+		  <li><a href="faliel.html" onfocus="this.blur()">Faliel</a>
+		  <li><a href="agonni.html" onfocus="this.blur()">Agonni</a>
+		  <li><a href="paine.html" onfocus="this.blur()">Paine</a> 
+		  <li><a href="gasper.html" onfocus="this.blur()">Gasper</a>
+		  <li><a href="helm.html" onfocus="this.blur()">Helm</a>
+		  <li><a href="tzuvan.html" onfocus="this.blur()">Tzuvan</a>  
+        </ul>
+		<li><a href="hidden.html" onfocus="this.blur()">Hidden</a>
+		<ul>
+		  <li><a href="hayate.html" onfocus="this.blur()">Hayate</a>
+          <li><a href="shirox.html" onfocus="this.blur()">Shirox</a>
+          <li><a href="vangal.html" onfocus="this.blur()">Vangal</a>
+		  <li><a href="ramda.html" onfocus="this.blur()">Ramda</a>
+		  <li><a href="vlad.html" onfocus="this.blur()">Vlad</a>
+		  <li><a href="sierra_01.html" onfocus="this.blur()">Sierra</a>
+		  <li><a href="sierra_02.html" onfocus="this.blur()">Sierra (2)</a>
+		  <li><a href="haserudo.html" onfocus="this.blur()">Haserudo</a>
+		  <li><a href="iris_matsuri.html" onfocus="this.blur()">Iris/Matsuri</a>  
+        </ul>
+		<li><a href="dragons_g1.html" onfocus="this.blur()">Dragons (1)</a>
+		<ul>
+		  <li><a href="graggel.html" onfocus="this.blur()">Graggel</a>
+		  <li><a href="karakk.html" onfocus="this.blur()">Karakk</a>
+          <li><a href="klaww.html" onfocus="this.blur()">Klaww</a>
+          <li><a href="krystiss.html" onfocus="this.blur()">Krystiss</a>
+		  <li><a href="paxx.html" onfocus="this.blur()">Paxx</a>
+		  <li><a href="razor.html" onfocus="this.blur()">Razor</a>
+		  <li><a href="skugg.html" onfocus="this.blur()">Skugg</a>
+        </ul>
+		<li><a href="dragons_g2.html" onfocus="this.blur()">Dragons (2)</a>
+		<ul>
+		  <li><a href="blakk.html" onfocus="this.blur()">Blakk</a>
+		  <li><a href="dugglar.html" onfocus="this.blur()">Dugglar</a>
+          <li><a href="fynn.html" onfocus="this.blur()">Fynn</a>
+		  <li><a href="grog.html" onfocus="this.blur()">Grog</a>
+          <li><a href="slytt.html" onfocus="this.blur()">Slytt</a>
+		  <li><a href="tazzax.html" onfocus="this.blur()">Tazzax</a>
+        </ul>
+	</ul>
+	<li><a href="f_generals.html" onfocus="this.blur()">Free Generals</a>
+	<ul>
+		<li><a href="beasts_g.html" onfocus="this.blur()">Beasts</a>
+		<ul>
+          <li><a href="barat.html" onfocus="this.blur()">Barat</a>
+		  <li><a href="fyffer.html" onfocus="this.blur()">Fyffer</a>
+		  <li><a href="rufas.html" onfocus="this.blur()">Rufas</a>
+          <li><a href="sylphia.html" onfocus="this.blur()">Sylphia</a>
+		  <li><a href="zakk.html" onfocus="this.blur()">Zakk</a>
+        </ul>
+		<li><a href="fighters_g.html" onfocus="this.blur()">Fighters</a>
+		<ul>
+		  <li><a href="atakin.html" onfocus="this.blur()">Atakin</a>
+		  <li><a href="gunter.html" onfocus="this.blur()">Gunter</a>
+		  <li><a href="ruix.html" onfocus="this.blur()">Ruix</a>
+          <li><a href="saul.html" onfocus="this.blur()">Saul</a>
+          <li><a href="taulus.html" onfocus="this.blur()">Taulus</a>
+        </ul>
+		<li><a href="knights_g.html" onfocus="this.blur()">Knights</a>
+		<ul>
+		  <li><a href="crawford.html" onfocus="this.blur()">Crawford</a>
+		  <li><a href="gorudias.html" onfocus="this.blur()">Gorudias</a>
+		  <li><a href="hikkis.html" onfocus="this.blur()">Hikkis</a>
+          <li><a href="randolph.html" onfocus="this.blur()">Randolph</a>
+        </ul>
+		<li><a href="magicians_g.html" onfocus="this.blur()">Magicians</a>
+		<ul>
+		  <li><a href="alex.html" onfocus="this.blur()">Alex</a>
+                  <li><a href="beykall.html" onfocus="this.blur()">Beykall</a>
+          <li><a href="farilis.html" onfocus="this.blur()">Farilis</a>
+          <li><a href="ishtar.html" onfocus="this.blur()">Ishtar</a>
+		  <li><a href="kilrein.html" onfocus="this.blur()">Kilrein</a>
+		  <li><a href="neil.html" onfocus="this.blur()">Neil</a>
+		  <li><a href="saharzad.html" onfocus="this.blur()">Saharzad</a>
+        </ul>
+		<li><a href="monks_g.html" onfocus="this.blur()">Monks</a>
+		<ul>
+		  <li><a href="barrat.html" onfocus="this.blur()">Barrat</a>
+          <li><a href="gator.html" onfocus="this.blur()">Gator</a>
+          <li><a href="livion.html" onfocus="this.blur()">Livion</a>
+		  <li><a href="stegalt.html" onfocus="this.blur()">Stegalt</a>
+        </ul>
+		<li><a href="ninja_g.html" onfocus="this.blur()">Ninjas</a>
+		<ul>
+		  <li><a href="narrak.html" onfocus="this.blur()">Narrak</a>
+          <li><a href="shadow.html" onfocus="this.blur()">Shadow</a>
+          <li><a href="slate.html" onfocus="this.blur()">Slate</a>
+		  <li><a href="sliver.html" onfocus="this.blur()">Sliver</a>
+		  <li><a href="slythis.html" onfocus="this.blur()">Slythis</a>
+		  <li><a href="zatai.html" onfocus="this.blur()">Zatai</a>
+        </ul>
+		<li><a href="priests_g.html" onfocus="this.blur()">Priests</a>
+		<ul>
+		  <li><a href="enya.html" onfocus="this.blur()">Enya</a>
+          <li><a href="fern.html" onfocus="this.blur()">Fern</a>
+          <li><a href="kulien.html" onfocus="this.blur()">Kulien</a>
+		  <li><a href="phylla.html" onfocus="this.blur()">Phylla</a>
+        </ul>
+		<li><a href="s_users_g.html" onfocus="this.blur()">Spirit Users</a>
+		<ul>
+		  <li><a href="cher.html" onfocus="this.blur()">Cher</a>
+          <li><a href="fiina.html" onfocus="this.blur()">Fiina</a>
+          <li><a href="katis.html" onfocus="this.blur()">Katis</a>
+		  <li><a href="marina.html" onfocus="this.blur()">Marina</a>
+		  <li><a href="mea.html" onfocus="this.blur()">Mea</a>
+		  <li><a href="milishea.html" onfocus="this.blur()">Milishea</a>
+		  <li><a href="phylicia.html" onfocus="this.blur()">Phylicia</a>
+        </ul>
+		<li><a href="samurai_g.html" onfocus="this.blur()">Samurai</a>
+		<ul>
+		  <li><a href="gekai.html" onfocus="this.blur()">Gekai</a>
+          <li><a href="hagar.html" onfocus="this.blur()">Hagar</a>
+          <li><a href="raitt.html" onfocus="this.blur()">Raitt</a>
+        </ul>
+		<li><a href="thiefs_g.html" onfocus="this.blur()">Thiefs</a>
+		<ul>
+		  <li><a href="bastion.html" onfocus="this.blur()">Bastion</a>
+<li><a href="gilette.html" onfocus="this.blur()">Gilette</a>
+          <li><a href="rog.html" onfocus="this.blur()">Rog</a>
+          <li><a href="voitt.html" onfocus="this.blur()">Voitt</a>
+        </ul>
+    </ul>
+    <li><a href="troops.html" onfocus="this.blur()">Troops</a>
+        <ul>
+          <li><a href="archers.html" onfocus="this.blur()">Archers</a>
+		  <li><a href="beasts.html" onfocus="this.blur()">Beasts</a>
+          <li><a href="cavalry.html" onfocus="this.blur()">Cavalry</a>
+		  <li><a href="dragons.html" onfocus="this.blur()">Dragons</a>
+		  <li><a href="harpies.html" onfocus="this.blur()">Harpies</a>
+          <li><a href="mages.html" onfocus="this.blur()">Mages</a>
+		  <li><a href="monks.html" onfocus="this.blur()">Monks</a>
+		  <li><a href="samurai.html" onfocus="this.blur()">Samurai</a>
+          <li><a href="soldiers.html" onfocus="this.blur()">Soldiers</a>
+		  <li><a href="zombies.html" onfocus="this.blur()">Zombies</a>
+        </ul>
+  <li><a href="items.html" onfocus="this.blur()">Items</a>
+    <ul>
+      <li><a href="weapons.html" onfocus="this.blur()">Weapons</a>
+	  <ul>
+		  <li><a href="axes.html" onfocus="this.blur()">Axes</a>
+          <li><a href="blades.html" onfocus="this.blur()">Blades</a>
+		  <li><a href="claws.html" onfocus="this.blur()">Claws</a>
+		  <li><a href="rods.html" onfocus="this.blur()">Rods</a>
+          <li><a href="spears.html" onfocus="this.blur()">Spears</a>
+          <li><a href="swords.html" onfocus="this.blur()">Swords</a>
+        </ul>
+      <li><a href="armory.html" onfocus="this.blur()">Armory</a>
+	        <ul>
+              <li><a href="armor.html" onfocus="this.blur()">Armor</a>
+              <li><a href="shields.html" onfocus="this.blur()">Shields</a>
+            </ul>
+	  <li><a href="books.html" onfocus="this.blur()">Books</a>
+      <li><a href="bracelets.html" onfocus="this.blur()">Bracelets</a>
+	  <li><a href="charms.html" onfocus="this.blur()">Charms</a>
+	  <li><a href="coins.html" onfocus="this.blur()">Coins</a>
+	  <li><a href="crests.html" onfocus="this.blur()">Crests</a>
+	  <li><a href="herbs.html" onfocus="this.blur()">Herbs</a>
+	  <li><a href="rings.html" onfocus="this.blur()">Rings</a>
+	  <li><a href="statues.html" onfocus="this.blur()">Statues</a>
+    </ul>
+  <li><a href="#" onfocus="this.blur()">Even More</a>
+        <ul>
+          <li><a href="map.html" onfocus="this.blur()">World Map</a>
+		  <li><a href="intro.html" onfocus="this.blur()">Game Intro</a>
+          <li><a href="events.html" onfocus="this.blur()">Events</a>
+		  <li><a href="m_end.html" onfocus="this.blur()">Madruk's End</a>
+		  <li><a href="ending.html" onfocus="this.blur()">Game End</a>
+          <li><a href="formations.html"onfocus="this.blur()">Formations</a>
+		  <li><a href="castles.html" onfocus="this.blur()">Castles etc.</a>
+		  <li><a href="backgrounds.html" onfocus="this.blur()">Backgrounds</a>
+		  		  <li><a href="midi.html" onfocus="this.blur()">Midi Files</a>
+        </ul>
+</ul>
+</div>
+<br><br><br>
+<img src="space.png" width="106" height="2" alt="" align=left><table class="desc" width="480" height="336" border="0" cellspacing="0" cellpadding="0" background="back_m.png">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="458" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="314" alt=""></td>
+<td valign=top>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="w">
+<a class="y" href="#" onfocus="this.blur()" OnMouseOver="ZeigeEbene(1)" OnMouseOut="VersteckeEbene(1)"><img src="randolph.png" width="48" height="48" alt="" align="absmiddle" border="0"></a>&nbsp;&nbsp;&nbsp;&nbsp;<b class="y">Randolph (All Kingdoms)</b></td>
+</tr>
+<tr><td class="w" valign=top><hr color="#c0a800" size="1"><img src="knight_mg_01_a.gif" width="64" height="56" alt="" align=right>
+Once your adventure begins, Randolph is an independant knight. <br>He is not very reliable and may desert if no awards are presented <br>after being send into a battle.<br>There are two possible ways to get him under your command: <br>1. Use Search during Domestic Mode and 2. Capture him in a battle.
+<hr color="#c0a800" size="1">
+<table>
+<tr>
+<td class="w"><b class="y">Profession:</b></td>
+<td class="w">Knight</td>
+</tr>
+<tr>
+<td class="w"><b class="y">Start Troops:</b></td>
+<td class="w">Soldiers&nbsp;<img src="award_01.png" width="7" height="15" alt="" hspace=2 align=absmiddle> Cavalry&nbsp;<img src="award_01.png" width="7" height="15" alt="" hspace=2 align=absmiddle><img src="award_01.png" width="7" height="15" alt="" hspace=2 align=absmiddle></td>
+</tr>
+<tr>
+<td rowspan=3 valign=top><b class="y">Magic:</b></td>
+<td class="w"><img src="magic01.png" width="15" height="15" alt="" align=absmiddle>&nbsp;Sonic Boom</td>
+</tr>
+<tr>
+<td class="w"><img src="magic01.png" width="15" height="15" alt="" align=absmiddle>&nbsp;Sonic Wave</td>
+</tr>
+<tr>
+<td class="w"><img src="magic02.png" width="15" height="15" alt="" align=absmiddle>&nbsp;Hyper Storm</td>
+</tr>
+<tr>
+<td class="w"><b class="y">Formation:</b></td>
+<td class="w">Squad</td>
+</tr>
+<tr>
+<td class="w"><b class="y">Intelligence:</b></td>
+<td class="w">&lt; 64</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td class="w" colspan=2 align=center><hr color="#c0a800" size="1">For a picture of the PS2 version move your mouse over the image!</td></tr>
+</table>
+</td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+<DIV ID="ebene1" STYLE="Position: absolute; Left: 413px; Top: 55px; Visibility: hidden; Z-Index: 2">
+<table class="desc" border="0" cellspacing="0" cellpadding="0" background="randolph_b.png" width="162" height="174">
+<tr>
+<td background="tl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="tr.png"><img src="space.png" width="11" height="11" alt=""></td>
+<tr>
+<td background="cl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td><img src="space.png" width="140" height="152" alt=""></td>
+<td background="cr.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+<tr>
+<td background="bl.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="bc.png"><img src="space.png" width="11" height="11" alt=""></td>
+<td background="br.png"><img src="space.png" width="11" height="11" alt=""></td>
+</tr>
+</table>
+</div>
+<DIV STYLE="Position: absolute; Left: 413px; Top: 215px; Z-Index: 1"><img src="logo_s.png" width="149" height="104" alt="" /></div>
+<script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'UA-62681518-1', 'auto'); ga('require', 'displayfeatures'); ga('send', 'pageview');</script></body>
+
+<!-- Mirrored from www.biostation-gt-bi.de/wl/randolph.html by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 06 Jan 2011 17:33:44 GMT -->
+</html>
